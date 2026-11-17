@@ -32,5 +32,10 @@ namespace fantasybestiariumdb
         public string FoGyengeseg { get => foGyengeseg; }
         public string LeggyakoribbZsakmany { get => leggyakoribbZsakmany; }
         public bool VeszelyesE { get => veszelyesE; }
+
+        public override string ToString()
+        {
+            return $"{Nev}, veszélyességi szintje {VeszelyessegiSzint}, élőhelye {Elohely}, gyengesége {FoGyengeseg}, leggyakoribb zsákmánya {LeggyakoribbZsakmany}, {(VeszelyesE ? "veszélyes" : "nem veszélyes")}";
+        }
     }
 }
