@@ -40,7 +40,7 @@ namespace fantasybestiariumdb
         }
         public IEnumerable<Szorny> MocsariVeszelyesSzornyek()
         {
-            var eredmeny = szornyek.Where(sz => sz.Elohely == "Fekete mocsár" && sz.VeszelyessegiSzint >= 5).OrderByDescending(sz => sz.VeszelyessegiSzint);
+            var eredmeny = szornyek.Where(sz => sz.Elohely == "Fekete Mocsár" && sz.VeszelyessegiSzint >= 5).OrderByDescending(sz => sz.VeszelyessegiSzint);
             return eredmeny;
         }
         public bool VanExtremTuzGyengeSzorny()

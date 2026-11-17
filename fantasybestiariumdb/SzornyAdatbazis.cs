@@ -14,7 +14,7 @@ namespace fantasybestiariumdb
             List<Szorny> szornyek = new();
             using (MySqlConnection connection = new(connectionString))
             {
-                string query = "SELECT * FROM szorny";
+                string query = "SELECT * FROM szornyek";
                 using (MySqlCommand command = new(query, connection))
                 {
                     connection.Open();

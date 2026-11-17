@@ -35,7 +35,7 @@ namespace fantasybestiariumdb
 
         public override string ToString()
         {
-            return $"{Nev}, veszélyességi szintje {VeszelyessegiSzint}, élőhelye {Elohely}, gyengesége {FoGyengeseg}, leggyakoribb zsákmánya {LeggyakoribbZsakmany}, {(VeszelyesE ? "veszélyes" : "nem veszélyes")}";
+            return $"{Nev}, veszélyességi szintje: {VeszelyessegiSzint}, élőhelye: {Elohely}, gyengesége: {FoGyengeseg}, leggyakoribb zsákmánya: {LeggyakoribbZsakmany}, {(VeszelyesE ? "veszélyes" : "nem veszélyes")}";
         }
     }
 }
